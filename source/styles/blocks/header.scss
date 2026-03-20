@@ -13,3 +13,68 @@
   align-items: center;
   gap: 20px;
 }
+
+.header__link {
+  @include link();
+}
+
+.header__link--burger {
+  @include icon("menu.svg", $text-color, 26px, 20px);
+  display: block;
+  border: none;
+  background-color: transparent;
+}
+
+.header__icons {
+  display: flex;
+  gap: 20px 42px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__icon {
+  @include link();
+  display: flex;
+  color: $bg-basic-color;
+
+  &::after {
+    border: 6px solid $button-icon-bg-color;
+    border-radius: 100%;
+    display: block;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: $button-icon-bg-color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px 14px;
+  }
+}
+
+.header__icon-text {
+  padding: 10px;
+  margin-right: -6px;
+  background-color: $button-icon-bg-color;
+  color: $bg-basic-color;
+  border: 6px solid $button-icon-bg-color;
+  border-radius: 22px;
+  font-size: 12px;
+  font-family: $font-primary;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.header__icon--like::after {
+  background-image: url("../../images/like.svg");
+}
+
+.header__icon--cart::after {
+  background-image: url("../../images/cart.svg");
+  background-color: $bg-basic-color;
+}
+
+.header__icon--account::after {
+  background-image: url("../../images/account.svg");
+}

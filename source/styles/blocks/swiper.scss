@@ -1,0 +1,44 @@
+.swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.swiper__button {
+  display: block;
+  background-color: transparent;
+  border: 1px $button-border-color solid;
+  padding: 14px;
+  width: unset;
+}
+
+.swiper__button--right {
+  @include icon("arrow_small.svg", $text-color, 11px, 11px, 100%, 100%, "after");
+}
+
+.swiper__button--left {
+  @include icon("arrow_small.svg", $text-color, 11px, 11px, 100%, 100%, "after");
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+
+.swiper__button--not-active {
+  opacity: 66%;
+
+  &::before {
+    mask-image: url("../../images/arrow_small_not_active.svg");
+  }
+}
+
+.swiper__slide {
+  display: block;
+  width: 366px;
+  border: 1px $border-color solid;
+
+  & picture {
+    display: contents;
+  }
+}
+
+.swiper__image {
+  display: block;
+}

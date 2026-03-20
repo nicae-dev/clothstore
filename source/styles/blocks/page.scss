@@ -1,7 +1,23 @@
 .page__body {
   font-family: $font-primary;
   font-size: 18px;
-  line-height: 1.8;
-  color: #ffffff;
-  background-color: #0b1d26;
+  line-height: normal;
+  letter-spacing: 2px;
+  color: $text-color;
+  background-color: $bg-basic-color;
+  width: $page-width;
+  margin-inline: auto;
+  background-image: url("../../images/page_background.jpg");
+  background-repeat: repeat;
+  padding: 50px 40px 50px 50px;
+
+  // a {
+  //   font-family: $font-primary;
+  //   color: $text-color;
+  //   padding: 5px;
+
+  //   &:hover {
+  //     // outline: 1px $border-color solid;
+  //   }
+  // }
 }

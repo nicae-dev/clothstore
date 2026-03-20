@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Cloth Store</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="styles/styles.css">
   <!-- <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
@@ -17,19 +18,76 @@
   <header class="header">
     <nav class="header__nav">
       <ul class="header__menu">
+        <li class="header__item"><button class="header__link header__link--burger" type="button"><span class="visually-hidden">Menu</span></button></li>
         <li class="header__item"><a class="header__link" href="#">Home</a></li>
         <li class="header__item"><a class="header__link" href="#">Collections</a></li>
         <li class="header__item"><a class="header__link" href="#">New</a></li>
       </ul>
     </nav>
-    <a href="header_logo logo"><img src="images/logo_small.svg" alt="Cloth Store"></a>
+    <a class="header_logo logo" href="/"><img src="images/logo_small.svg" alt="Cloth Store" width="35" height="35"></a>
+    <ul class="header__icons">
+      <li class="header__icons-item">
+        <a class="header__icon header__icon--like" href="#"><span class="visually-hidden">Liked</span></a>
+      </li>
+      <li class="header__icons-item">
+        <a class="header__icon-wrapper header__icon header__icon--cart" href="#">
+          <span class="header__icon-text">Cart</span>
+        </a>
+      </li>
+      <li class="header__icons-item">
+        <a class="header__icon header__icon--account" href="#"><span class="visually-hidden">Account</span></a>
+      </li>
+    </ul>
   </header>
   <main>
+    <section class="search">
+      <h1 class="visually-hidden">Cloth Store</h1>
+      <ul class="search__list">
+        <li class="search__item"><a class="search__link" href="#">Men</a></li>
+        <li class="search__item"><a class="search__link" href="#">Women</a></li>
+        <li class="search__item"><a class="search__link" href="#">Kids</a></li>
+      </ul>
+      <form class="search__form" action="/">
+        <button class="search__button" type="submit"><span class="visually-hidden">Search</span></button>
+        <input class="search__input" type="text" placeholder="Search" name="search" id="search">
+        <label class="visually-hidden" for="search"></label>
+      </form>
+    </section>
+    <section class="section new">
+      <h2 class="section__title">New <br>Collection</h2>
+      <p class="section__desc">Summer <br>2024</p>
+      <a class="new__button" href="#">Go To Shop</a>
 
+      </button>
+      <div class="new__slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper__slide swiper-slide">
+            <picture>
+              <img class="swiper__image" src="images/new_collection_1.jpg" alt="white cloth" width="366" height="376">
+            </picture>
+          </div>
+          <div class="swiper__slide swiper-slide">
+            <picture>
+              <img class="swiper__image" src="images/new_collection_2.jpg" alt="black t-shirt" width="366" height="376">
+            </picture>
+          </div>
+        </div>
+        <button class="swiper-button-prev swiper__button swiper__button--left swiper__button--not-active" type="button">
+          <span class="visually-hidden">Left</span>
+
+        </button>
+        <button class="swiper-button-next swiper__button swiper__button--right" type="button">
+          <span class="visually-hidden">Right</span>
+
+        </button>
+      </div>
+    </section>
   </main>
   <footer>
 
   </footer>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="scripts/slider.js" async></script>
 </body>
 
 </html>

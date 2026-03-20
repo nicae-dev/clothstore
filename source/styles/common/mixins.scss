@@ -7,3 +7,23 @@
     src: $font-src;
   }
 }
+
+@mixin icon($name, $color: $icon-color, $width: 25px, $height: 25px, $mask-width: 100%, $mask-height: 100%, $psedo: "before") {
+  &::#{$psedo} {
+    display: block;
+    content: "";
+    width: $width;
+    height: $height;
+    background-color: $color;
+    mask-image: url("../../images/"+$name);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: $mask-width $mask-height;
+  }
+}
+
+
+@mixin link() {
+  color: $text-color;
+  text-decoration: none;
+}

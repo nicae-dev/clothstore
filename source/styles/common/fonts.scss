@@ -1,4 +1,6 @@
-@include font-face("Beatrice Deck", url("../../fonts/BeatriceDeck-Regular.woff") format("woff"));
+@include font-face("Beatrice Deck", url("../../fonts/BeatriceDeck-Extrabold.woff") format("woff"), 800);
 @include font-face("Beatrice Deck", url("../../fonts/BeatriceDeck-Bold.woff") format("woff"), 700);
 @include font-face("Beatrice Deck", url("../../fonts/BeatriceDeck-SemiBold.woff") format("woff"), 600);
+@include font-face("Beatrice Deck", url("../../fonts/BeatriceDeck-Medium.woff") format("woff"), 500);
+@include font-face("Beatrice Deck", url("../../fonts/BeatriceDeck-Regular.woff") format("woff"));
 // @include font-face("Inter", url("../../fonts/Inter-SemiBold.woff") format("woff"), 600);
