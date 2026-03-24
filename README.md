@@ -12,3 +12,4 @@
 * HTML5
 * SCSS
 * БЭМ
+* [Swiper API](https://swiperjs.com/swiper-api)

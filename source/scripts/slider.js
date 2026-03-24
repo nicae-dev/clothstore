@@ -1,11 +1,14 @@
-
+//console: npm install swiper
+// import Swiper JS
+// import Swiper from 'swiper';
+// import Swiper styles
+// import 'swiper/css';
 // import Swiper bundle with all modules installed
-// import Swiper from 'swiper/bundle';
+import Swiper from 'swiper/bundle';
 
 // import styles bundle
-// import 'swiper/swiper-bundle.min.css';
+import 'swiper/css/bundle';
 
-// init Swiper:
 const swiperNew = new Swiper('.new__slider', {
   direction: 'horizontal',
   slidesPerView: 2,
@@ -17,9 +20,11 @@ const swiperNew = new Swiper('.new__slider', {
   // },
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper__button--rifht',
-    prevEl: '.swiper__button--left',
+    // nextEl: '.swiper-button-prev',
+    // prevEl: '.swiper-button-next',
+    nextEl: '.swiper__button--left',
+    prevEl: '.swiper__button--right',
   },
 });
 // console.log('slider.js');
-// console.log(swiperNew);
+console.log(swiperNew);

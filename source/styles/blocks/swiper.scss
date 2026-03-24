@@ -1,6 +1,7 @@
 .swiper-wrapper {
   display: flex;
   flex-wrap: nowrap;
+  width: calc(366px*2);
 }
 
 .swiper__button {
